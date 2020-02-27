@@ -6,8 +6,15 @@
     <title>Our First Webpage</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1>Get in Touch</h1>
+        <p>Contact me to find out more about my exciting trips!</p>
+        <a href="contact/index.html"><button>Contact</button></a>
+    </div>
     <!-- <p>I should not be dispalyed</p> !-->
     <header class ="fixed-bar"><h1 class="page-title">Mike's World</h1></header>
     <nav>
@@ -22,8 +29,8 @@
             <p>The California Landscape</p>
         </div>
         <div class="trip-images">
-            <img src="images/sf.png" alt="Image of the San Francisco streets">
-            <img src="images/california.png" alt="Image of the California streets">
+            <img class = 'trip-image'src="images/sf.png" alt="Image of the San Francisco streets">
+            <img class = 'trip-image'src="images/california.png" alt="Image of the California streets">
         </div>
         <p class="feedback">Do people like my Page</p>
     </main>
@@ -37,5 +44,6 @@
         <p>Looks really nice, beautiful pictures!</p>
         </div>  
     </footer>
+<script src="main.js"></script>
 </body>
 </html>

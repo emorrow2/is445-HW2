@@ -6,14 +6,28 @@
     <title>Our First Webpage</title>
     <link rel="shortcut icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><h1>Mike's World</h1></header>
+    <header class ="fixed-bar"><h1 class="page-title">Mike's World</h1></header>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="../index.html">Home</a></li>
             <li>Contact</li>
         </ul>
     </nav>
+
+<main>
+    <form class="form">
+        <label for="input-name">Name</label>
+        <input type="text" name='name' class="form-input" id="input-name" oninput="checkInput()">
+        <label for="input-mail">Mail</label>
+        <input type="text" name="email" class="form-input" id="input-mail">
+        <label for="input-message">Your Message</label>
+        <textarea name="message" class="form-input" cols="30" rows="10" id="input-message" oninput="checkInput()"></textarea>
+        <button type='submit' class="submit-button" disabled>Submit</button>
+    </form>
+</main>
+<script src="main.js"></script>
 </body>
 </html>
